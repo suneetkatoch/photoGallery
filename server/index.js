@@ -14,7 +14,7 @@ import uploadRouter from './routes/uploadRoutes.js';
 const port = process.env.PORT || 8080;
 app.use(cors({
     credentials:true,
-    origin:'http://localhost:5173'
+    origin:'https://dulcet-panda-64643d.netlify.app'
 }));
 app.use(express.json());
 app.use(cookieParser());

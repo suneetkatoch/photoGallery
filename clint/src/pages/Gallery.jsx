@@ -13,7 +13,7 @@ export const Gallery = () => {
 
   const getAllImages = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/images/all-images");
+      const res = await axios.get("https://photogallery-5.onrender.com/api/images/all-images");
       if (res.data && Array.isArray(res.data.data)) {
         setImages(res.data.data);
       } else {

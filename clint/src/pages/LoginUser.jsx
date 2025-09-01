@@ -28,7 +28,7 @@ function LoginUser() {
     } else {
       try {
         const login = await axios.post(
-          "http://localhost:8080/api/user/login",
+          "https://photogallery-5.onrender.com/api/user/login",
           data,
           { withCredentials: true }
         );

@@ -1,29 +1,29 @@
 
 
-export const BaseUrl="http://localhost:8080"
+export const BaseUrl="https://photogallery-5.onrender.com"
 const summerApi={
     login:{
-        url:'/api/user/login',
+        url:'https://photogallery-5.onrender.com/api/user/login',
         method:"post"
     },
    
   
     refreshToken:{
-        url:'http://localhost:8080/api/user/refresh-token',
+        url:'https://photogallery-5.onrender.com/api/user/refresh-token',
         method:"post"
     },
     
     logoutUser:{
-        url:'http://localhost:8080/api/user/logout',
+        url:'https://photogallery-5.onrender.com/api/user/logout',
         method:"post"
     },
     
     uploadImage:{
-        url:'http://localhost:8080/api/file/upload',
+        url:'https://photogallery-5.onrender.com/api/file/upload',
         method:"post"
     },
     getAllImages:{
-        url:'http://localhost:8080/api/images/all-images',
+        url:'https://photogallery-5.onrender.com/api/images/all-images',
         method:"get"
     },
     

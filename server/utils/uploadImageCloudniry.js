@@ -18,4 +18,16 @@ const uploadImageClodinary = async(image)=>{
     return uploadImage
 }
 
+const deleteImageCloudinary = async(publicId) => {
+    if(!publicId) return { result: 'not_found' }
+    const result = await new Promise((resolve,reject)=>{
+        cloudinary.uploader.destroy(publicId,(error,deleteResult)=>{
+            if(error) return resolve({ error })
+            return resolve(deleteResult)
+        })
+    })
+    return result
+}
+
 export default uploadImageClodinary
+export { deleteImageCloudinary }

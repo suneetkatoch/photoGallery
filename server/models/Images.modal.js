@@ -5,6 +5,10 @@ const imageSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
+  public_id: {
+    type: String,
+    default: "",
+  },
 }, {
   timestamps: true,
 });
